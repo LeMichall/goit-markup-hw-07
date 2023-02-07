@@ -21,28 +21,32 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="header-border">
+    <header class="page-header">
       <div class="container header">
-        <a class="logo logo-top" href="#"
-          ><span class="blue">Web</span>Studio</a
+        <a class="logo header__logo" href="#"
+          ><span class="logo logo--blue">Web</span>Studio</a
         >
         <nav>
-          <ul class="navigation">
-            <li class="item">
-              <a class="is-active" href="./index.html">Agencja</a>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link nav-link--underline" href="./index.html"
+                >Agencja</a
+              >
             </li>
-            <li class="item"><a href="./portfolio.html">Portfolio</a></li>
-            <li class="item"><a href="#">Kontakt</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
           </ul>
         </nav>
         <a class="contact-links" href="mailto:info@devstudio.com"
-          ><svg class="header-icons" width="16" height="12">
+          ><svg class="contact-links__icons" width="16" height="12">
             <use href="./images/icons.svg#icon-envelope"></use>
           </svg>
           info@devstudio.com</a
         >
         <a class="contact-links" href="tel:+48111111111"
-          ><svg class="header-icons" width="10" height="16">
+          ><svg class="contact-links__icons" width="10" height="16">
             <use href="./images/icons.svg#icon-smartphone"></use>
           </svg>
           +48 111 111 111</a
@@ -51,9 +55,9 @@
     </header>
     <main>
       <!--Sekcja-"Header"-->
-      <section class="section back-img">
-        <div class="container section-1 text-center">
-          <h1 class="main-header">
+      <section class="section section--background-img">
+        <div class="container section-header">
+          <h1 class="section-header__title">
             EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU
           </h1>
 
@@ -65,43 +69,43 @@
       <!--Sekcja-Nasze atuty-->
       <section class="section">
         <div class="container">
-          <ul class="flexbox section-spacing">
-            <li class="item">
-              <svg class="icons" width="270" height="120">
-                <use href="./images/icons.svg#icon-Antenna"></use>
+          <ul class="section-advantages">
+            <li>
+              <svg class="section-advantages__icons" width="270" height="120">
+                <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
-              <h3 class="paragraph-title">LOREM IPSUM</h3>
-              <p class="paragraph-text small">
+              <h3 class="section-advantages__title">LOREM IPSUM</h3>
+              <p class="section-advantages__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="item">
-              <svg class="icons" width="270" height="120">
+            <li>
+              <svg class="section-advantages__icons" width="270" height="120">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
-              <h3 class="paragraph-title">LOREM IPSUM</h3>
-              <p class="paragraph-text small">
+              <h3 class="section-advantages__title">LOREM IPSUM</h3>
+              <p class="section-advantages__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="item">
-              <svg class="icons" width="270" height="120">
+            <li>
+              <svg class="section-advantages__icons" width="270" height="120">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
-              <h3 class="paragraph-title">LOREM IPSUM</h3>
-              <p class="paragraph-text small">
+              <h3 class="section-advantages__title">LOREM IPSUM</h3>
+              <p class="section-advantages__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="item">
-              <svg class="icons" width="270" height="120">
+            <li>
+              <svg class="section-advantages__icons" width="270" height="120">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
-              <h3 class="paragraph-title">LOREM IPSUM</h3>
-              <p class="paragraph-text small">
+              <h3 class="section-advantages__title">LOREM IPSUM</h3>
+              <p class="section-advantages__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
@@ -111,11 +115,11 @@
       </section>
       <!--Sekcja-Czym sie zajmujemy-->
       <section class="section">
-        <div class="container text-center">
+        <div class="container">
           <h2 class="section-title">Czym sie zajmujemy</h2>
-          <ul class="flexbox section-about">
-            <li class="item">
-              <span class="overlay-captions">APLIKACJE KOMPUTEROWE</span>
+          <ul class="list list--relative">
+            <li class="list__item-about">
+              <span class="list__captions">APLIKACJE KOMPUTEROWE</span>
               <img
                 class="no-gap"
                 src="./images/img1.jpg"
@@ -124,8 +128,8 @@
                 height="294"
               />
             </li>
-            <li class="item">
-              <span class="overlay-captions">APLIKACJE MOBILNE</span>
+            <li class="list__item-about">
+              <span class="list__captions">APLIKACJE MOBILNE</span>
               <img
                 class="no-gap"
                 src="./images/img2.jpg"
@@ -134,8 +138,8 @@
                 height="294"
               />
             </li>
-            <li class="item">
-              <span class="overlay-captions">ROZWIĄZANIA GRAFICZNE</span>
+            <li class="list__item-about">
+              <span class="list__captions">ROZWIĄZANIA GRAFICZNE</span>
               <img
                 class="no-gap"
                 src="./images/img3.jpg"
@@ -148,12 +152,12 @@
         </div>
       </section>
       <!--Sekcja-Nasz zespol-->
-      <section class="section background-darker">
-        <div class="container text-center">
+      <section class="section section--back-darker">
+        <div class="container">
           <h2 class="section-title">Nasz zespół</h2>
-          <ul class="flexbox section-team">
-            <li class="item">
-              <figure class="image-margin">
+          <ul class="list">
+            <li class="list__item-team">
+              <figure class="image">
                 <img
                   class="no-gap"
                   src="./images/product_designer.jpg"
@@ -162,11 +166,11 @@
                   height="260"
                 />
                 <figcaption class="figcaption">
-                  <h3 class="name">John Doe</h3>
-                  <span class="small">Product Designer</span>
+                  <h3 class="figcaption__name">John Doe</h3>
+                  <span class="figcaption__job">Product Designer</span>
                 </figcaption>
               </figure>
-              <ul class="flexbox">
+              <ul class="list list--spacing">
                 <li>
                   <a class="icon-team"
                     ><svg width="20" height="20">
@@ -197,8 +201,8 @@
                 </li>
               </ul>
             </li>
-            <li class="item">
-              <figure class="image-margin">
+            <li class="list__item-team">
+              <figure class="image">
                 <img
                   class="no-gap"
                   src="./images/frontend_developer.jpg"
@@ -207,11 +211,11 @@
                   height="260"
                 />
                 <figcaption class="figcaption">
-                  <h3 class="name">John Doe</h3>
-                  <span class="small">Frontend Developer</span>
+                  <h3 class="figcaption__name">John Doe</h3>
+                  <span class="figcaption__job">Frontend Developer</span>
                 </figcaption>
               </figure>
-              <ul class="flexbox">
+              <ul class="list list--spacing">
                 <li>
                   <a class="icon-team"
                     ><svg width="20" height="20">
@@ -242,8 +246,8 @@
                 </li>
               </ul>
             </li>
-            <li class="item">
-              <figure class="image-margin">
+            <li class="list__item-team">
+              <figure class="image">
                 <img
                   class="no-gap"
                   src="./images/marketing.jpg"
@@ -252,11 +256,11 @@
                   height="260"
                 />
                 <figcaption class="figcaption">
-                  <h3 class="name">John Doe</h3>
-                  <span class="small">Marketing</span>
+                  <h3 class="figcaption__name">John Doe</h3>
+                  <span class="figcaption__job">Marketing</span>
                 </figcaption>
               </figure>
-              <ul class="flexbox">
+              <ul class="list list--spacing">
                 <li>
                   <a class="icon-team"
                     ><svg width="20" height="20">
@@ -287,8 +291,8 @@
                 </li>
               </ul>
             </li>
-            <li class="item">
-              <figure class="image-margin">
+            <li class="list__item-team">
+              <figure class="image">
                 <img
                   class="no-gap"
                   src="./images/ui_designer.jpg"
@@ -297,11 +301,11 @@
                   height="260"
                 />
                 <figcaption class="figcaption">
-                  <h3 class="name">John Doe</h3>
-                  <span class="small">UI designer</span>
+                  <h3 class="figcaption__name">John Doe</h3>
+                  <span class="figcaption__job">UI designer</span>
                 </figcaption>
               </figure>
-              <ul class="flexbox">
+              <ul class="list list--spacing">
                 <li>
                   <a class="icon-team"
                     ><svg width="20" height="20">
@@ -337,36 +341,36 @@
       </section>
       <!--Nasi klienci-->
       <section class="section">
-        <div class="container text-center">
+        <div class="container">
           <h2 class="section-title">Nasi klienci</h2>
-          <ul class="flexbox">
+          <ul class="list list--spacing">
             <li>
-              <svg class="client-logo">
+              <svg class="list__client-logo">
                 <use href="./images/icons.svg#icon-Logo5"></use>
               </svg>
             </li>
             <li>
-              <svg class="client-logo">
+              <svg class="list__client-logo">
                 <use href="./images/icons.svg#icon-Logo4"></use>
               </svg>
             </li>
             <li>
-              <svg class="client-logo">
+              <svg class="list__client-logo">
                 <use href="./images/icons.svg#icon-Logo3"></use>
               </svg>
             </li>
             <li>
-              <svg class="client-logo">
+              <svg class="list__client-logo">
                 <use href="./images/icons.svg#icon-Logo2"></use>
               </svg>
             </li>
             <li>
-              <svg class="client-logo">
+              <svg class="list__client-logo">
                 <use href="./images/icons.svg#icon-Logo1"></use>
               </svg>
             </li>
             <li>
-              <svg class="client-logo">
+              <svg class="list__client-logo">
                 <use href="./images/icons.svg#icon-Logo"></use>
               </svg>
             </li>
@@ -375,29 +379,29 @@
       </section>
     </main>
     <!--Footer-->
-    <footer class="background">
-      <div class="container footer-space flexbox">
-        <div class="margin-right">
-          <a class="logo footer" href="#"
-            ><span class="blue">Web</span>Studio</a
+    <footer class="page-footer">
+      <div class="container list list--footer-spacing">
+        <div>
+          <a class="logo logo--white" href="#"
+            ><span class="logo logo--blue">Web</span>Studio</a
           >
-          <address class="address-position">
-            <ul class="footer-text">
-              <li class="item">
+          <address class="address">
+            <ul>
+              <li class="address__item address__item--white">
                 <a
-                  class="footer active"
+                  class="address__link"
                   href="https://goo.gl/maps/qj117W8FbM5sxVwv7"
                   target="_blank"
                   >m. Warszawa, Aleje Jerozolimskie 21</a
                 >
               </li>
-              <li class="item">
-                <a class="footer fade active" href="mailto:info@example.com"
+              <li class="address__item address__item--gray">
+                <a class="address__link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="item">
-                <a class="footer fade active" href="tel:+48111111111"
+              <li class="address__item address__item--gray">
+                <a class="address__link" href="tel:+48111111111"
                   >+48 111 111 111</a
                 >
               </li>
@@ -405,31 +409,33 @@
           </address>
         </div>
         <div class="footer-social">
-          <h3 class="paragraph-title">DOŁĄCZ DO NAS</h3>
-          <ul class="flexbox social-spacing">
-            <li>
-              <a class="icon-team icon-footer"
+          <h3 class="footer-social__title footer-social__title--white">
+            DOŁĄCZ DO NAS
+          </h3>
+          <ul class="list">
+            <li class="list__item-footer">
+              <a class="footer-social__icon-team icon-team"
                 ><svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon-team icon-footer"
+            <li class="list__item-footer">
+              <a class="footer-social__icon-team icon-team"
                 ><svg width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon-team icon-footer"
+            <li class="list__item-footer">
+              <a class="footer-social__icon-team icon-team"
                 ><svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="icon-team icon-footer"
+              <a class="footer-social__icon-team icon-team"
                 ><svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -439,7 +445,7 @@
         </div>
         <div class="form">
           <label for="user_email"
-            ><h3 class="paragraph-title">ZAPISZ SIĘ DO NEWSLETTERA</h3></label
+            ><h3 class="form__title">ZAPISZ SIĘ DO NEWSLETTERA</h3></label
           >
           <form>
             <input
@@ -461,7 +467,7 @@
     <!-- Modal -->
     <div class="modal-overlay is-hidden" data-modal>
       <div class="modal">
-        <button class="close-button" data-modal-close>X</button>
+        <button class="modal__close-button" data-modal-close>X</button>
         <p>Zostaw swoje dane w formularzu poniżej</p>
         <form>
           <div class="inputs">
@@ -485,7 +491,7 @@
           </div>
 
           <input type="checkbox" name="tos" id="tos" />
-          <label for="tos" class="paragraph-text small">
+          <label for="tos" class="inputs__label-text inputs__label-text--grey">
             Oświadczam iż akceptuję <a href="">Regulamin</a> i
             <a href="">Politykę Prywatności.</a>
           </label>
