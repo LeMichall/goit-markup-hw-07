@@ -369,31 +369,29 @@ body {
 .picture-list__item:hover .overlay {
   transform: translateY(0);
 }
-
-/*
- .paragraph-title {
-  font-size: 14px;
-  line-height: 1.17;
-  margin-bottom: 10px;
-  width: 270px;
-}
-.paragraph-text {
-  font-size: 14px;
-  line-height: 1.7;
-} */
-
-/* .name {
-  font-weight: 500;
-  line-height: 1.17;
-} */
-
-.picture h3 {
+.card__title {
+  padding: 20px 24px 4px 24px;
   font-size: 18px;
   line-height: 2;
 }
-.picture span {
+.card__type {
+  display: block;
+  padding: 0 24px 20px 24px;
   line-height: 1.9;
 }
+.card__type--grey {
+  color: var(--small-text);
+}
+
+.card__caption {
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  border-right: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
+}
+.box__image {
+  display: block;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -408,22 +406,6 @@ body {
   justify-content: space-evenly;
 }
 
-.figure-table > h3 {
-  padding: 20px 24px 4px 24px;
-}
-.figure-table > .small {
-  display: block;
-  padding: 0 24px 20px 24px;
-}
-
-.figure-table {
-  border-bottom: 1px solid rgba(238, 238, 238, 1);
-  border-right: 1px solid rgba(238, 238, 238, 1);
-  border-left: 1px solid rgba(238, 238, 238, 1);
-}
-.no-gap {
-  display: block;
-}
 .envelope {
   width: 16px;
   height: 12px;
