@@ -4,7 +4,7 @@
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  background-color: #ffffff;
+  background-color: $color-white;
   position: fixed;
   border-radius: 4px;
   z-index: 2;
@@ -18,7 +18,7 @@
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: $close-button-border;
     padding: 6px;
     background-color: $color-white;
   }

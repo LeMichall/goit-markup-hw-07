@@ -4,9 +4,8 @@
   right: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background: $modal-overlay;
+  transition: $modal-window-transition;
 
   &--is-hidden {
     pointer-events: none;

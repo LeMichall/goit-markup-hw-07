@@ -15,8 +15,8 @@
     }
   }
   &__caption {
-    border-bottom: 1px solid rgba(238, 238, 238, 1);
-    border-right: 1px solid rgba(238, 238, 238, 1);
-    border-left: 1px solid rgba(238, 238, 238, 1);
+    border-right: $card-borders;
+    border-left: $card-borders;
+    border-bottom: $card-borders;
   }
 }
